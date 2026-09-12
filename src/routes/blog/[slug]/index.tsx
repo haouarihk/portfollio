@@ -1,7 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { routeLoader$ } from "@builder.io/qwik-city";
-import { getPost, renderMarkdown } from "~/lib/blog";
+import { getPost, getPosts, renderMarkdown } from "~/lib/blog";
+
+export const onStaticGenerate = () => {
+  return { params: getPosts().map((post) => ({ slug: post.slug })) };
+};
 
 export const usePost = routeLoader$(({ params, status }) => {
   const post = getPost(params.slug);

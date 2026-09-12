@@ -213,6 +213,12 @@ img {
   color: var(--fg);
 }
 
+.project-extra a + a::before {
+  content: "·";
+  margin: 0 0.6rem;
+  color: var(--faint);
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;

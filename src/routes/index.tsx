@@ -38,8 +38,8 @@ export default component$(() => {
               {projects.map((p) => (
                 <li key={p.title} class="project">
                   <h3 class="project-title">
-                    {p.href ? (
-                      <a href={p.href} target="_blank" rel="noreferrer">
+                    {p.links.length > 0 ? (
+                      <a href={p.links[0].href} target="_blank" rel="noreferrer">
                         {p.title}
                       </a>
                     ) : (
@@ -47,11 +47,18 @@ export default component$(() => {
                     )}
                   </h3>
                   <p class="project-desc">{p.description}</p>
-                  {p.extraHref && (
+                  {p.links.length > 1 && (
                     <p class="project-extra">
-                      <a href={p.extraHref} target="_blank" rel="noreferrer">
-                        {p.extraLabel} ↗
-                      </a>
+                      {p.links.slice(1).map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {link.label} ↗
+                        </a>
+                      ))}
                     </p>
                   )}
                   <div class="project-tags">
