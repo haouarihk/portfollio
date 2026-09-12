@@ -16,11 +16,7 @@ export const SiteFooter = component$(() => {
             GitHub
           </a>
           <a href="mailto:haouarihk@gmail.com">Email</a>
-          <a
-            href="https://haouarihk.com/cv.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="/cv.pdf" target="_blank" rel="noreferrer">
             CV
           </a>
         </div>
