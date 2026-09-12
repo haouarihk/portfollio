@@ -47,12 +47,14 @@ export default defineConfig(({ command, mode }): UserConfig => {
     //     : undefined,
 
     server: {
+      allowedHosts: ["haouarihk.com", ".haouarihk.com"],
       headers: {
         // Don't cache the server response in dev mode
         "Cache-Control": "public, max-age=0",
       },
     },
     preview: {
+      allowedHosts: ["haouarihk.com", ".haouarihk.com"],
       headers: {
         // Do cache the server response in preview (non-adapter production build)
         "Cache-Control": "public, max-age=600",
