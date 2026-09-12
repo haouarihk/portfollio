@@ -1,0 +1,12 @@
+# New blog posts go in this directory as *.md files.
+
+# Format:
+
+# ---
+# title: How X works
+# date: 2026-09-12
+# description: A short summary shown on the writing index.
+# ---
+#
+# Body goes here in markdown. Headings, paragraphs, lists, links,
+# blockquotes, inline code and code blocks are supported.
