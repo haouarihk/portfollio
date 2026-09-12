@@ -1,0 +1,15 @@
+node_modules
+dist
+server
+.git
+.gitignore
+.env
+*.local
+logs
+*.log
+tsconfig.tsbuildinfo
+.rollup.cache
+.cache
+.vscode
+.idea
+.DS_Store
