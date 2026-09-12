@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\definecolor{rulecolor}{HTML}{9a9a9a}
+\setlist{nosep,leftmargin=1.5em,itemsep=1pt}
+
+\titleformat{\section}
+  {\large\bfseries}{\thesection}{0em}{}[{\color{rulecolor}\titlerule[0.5pt]}]
+\titlespacing*{\section}{0pt}{1.1em}{0.5em}
+
+\newcommand{\head}[1]{{\section*{#1}}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Haitam Haouari}\\[4pt]
+  {\large Software Engineer \textperiodcentered\ Web Developer}\\[6pt]
+  {\small
+    \href{mailto:haouarihk@gmail.com}{haouarihk@gmail.com} \textperiodcentered\
+    \href{https://github.com/haouarihk}{github.com/haouarihk} \textperiodcentered\
+    \href{https://haouarihk.com}{haouarihk.com}
+  }
+\end{center}
+
+\vspace{6pt}
+\noindent\rule{\textwidth}{0.5pt}
+\vspace{8pt}
+
+\head{Summary}
+Full-stack software engineer with a focus on JavaScript, TypeScript, React and Next.js, plus Rust for backend work. I build web apps, developer tools and open-source projects, ship fast, and enjoy solving real-world problems in remote-first teams.
+
+\head{Experience}
+
+\noindent\textbf{Zoubda} \hfill \textit{Feb 2026 -- Jun 2026}\\
+Software Engineer\\
+{\small Worked on \href{https://zoubda.com}{zoubda.com}, a multilingual book-summary platform serving thousands of readable and audio summaries in Arabic, English and French.}
+
+\vspace{6pt}
+\noindent\textbf{Private Agency} \hfill \textit{Oct 2025 -- Dec 2025}\\
+Internal Scraping Tool\\
+{\small Built an internal tool that scrapes and organizes client information for an agency. Private work, not open source.}
+
+\vspace{6pt}
+\noindent\textbf{Obsidian Text Generator} \hfill \textit{2022 -- now}\\
+Plugin Contributor\\
+{\small Heavily contributed to a 2k-star open-source AI plugin for Obsidian. Cross-provider text generation (OpenAI, Anthropic, Google, local models), community templates, CI and usability improvements. TypeScript.}
+
+\vspace{6pt}
+\noindent\textbf{Accommodation.co.uk} \hfill \textit{2021 -- 2022}\\
+Software Engineer (Freelance)\\
+{\small API security hardening, Nuxt 2 to 3 migration, and UI improvements.}
+
+\vspace{6pt}
+\noindent\textbf{Inventory App \textperiodcentered\ POS System} \hfill \textit{2019 -- 2020}\\
+POS System Developer\\
+{\small Full-featured, offline-first POS application for a local shop built with Svelte, Firebase and Electron.}
+
+\vspace{6pt}
+\noindent\textbf{word2latex.net \textperiodcentered\ Academic Docs} \hfill \textit{2019 -- 2020}\\
+LaTeX Specialist\\
+{\small Converting Word documents to LaTeX for university students and researchers, delivering clean publication-ready formatting.}
+
+\vspace{6pt}
+\noindent\textbf{DocToLaTeX File Conversion API} \hfill \textit{2019}\\
+Backend Developer\\
+{\small Document conversion server built with Node.js and Laravel supporting uploads and automated conversion.}
+
+\head{Selected Projects}
+\begin{itemize}
+  \item \textbf{Diggit} --- federated decentralized Git provider. Rust API with git smart-HTTP, SSH, OAuth, and ActivityPub-style federation. \href{https://github.com/haouarihk/diggit}{github.com/haouarihk/diggit}
+  \item \textbf{Web Tools} --- tools for developers and Discord users: JSON formatter, JWT decoder, cron builder, Discord timestamps, and more. \href{https://tools.haouarihk.com}{tools.haouarihk.com}
+  \item \textbf{mcpsshub} --- open-source MCP server running commands on remote machines over a plain WebSocket, no SSH. \href{https://github.com/haouarihk/mcpsshub}{github.com/haouarihk/mcpsshub}
+  \item \textbf{Moderation API} --- self-hostable, OpenAI-compatible content moderation API. BERT-based, 11 harm categories, CPU and GPU images. \href{https://github.com/haouarihk/moderationAPI}{github.com/haouarihk/moderationAPI}
+  \item \textbf{goImgTemplator} --- Go image-generation engine for dynamic badges and rank cards from PNG templates. \href{https://github.com/haouarihk/goImgTemplator}{github.com/haouarihk/goImgTemplator}
+  \item \textbf{Geoguessr $\rightarrow$ CS ranks extension} --- Chrome/Firefox extension swapping Geoguessr ranks for Counter-Strike ranks.
+  \item \textbf{CS2 Linux tweak script} --- low-latency Linux tuning for Counter-Strike 2. \href{https://github.com/haouarihk/cs2-linux-tweak}{github.com/haouarihk/cs2-linux-tweak}
+\end{itemize}
+
+\head{Skills}
+\textbf{Proficient:} JavaScript, TypeScript, React, Next.js, Node.js, TailwindCSS\\
+\textbf{Familiar:} Rust, Go, Svelte, Python, GraphQL, Firebase, Web3.js, Electron, Laravel, FastAPI
+
+\head{Languages \& Interests}
+English (Fluent, professional), Arabic (Native), French (Basic).\\
+Coding, solving technical challenges, learning new technologies, and occasional gaming.
+
+\end{document}
